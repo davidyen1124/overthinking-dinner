@@ -1,0 +1,1468 @@
+{
+  "restaurant": {
+    "id": "2fdfe454-533b-4740-bac8-991866dd859c",
+    "name": "湘粤情",
+    "names": {
+      "zh-Hans": "湘粤情",
+      "zh-Hant": "湘粵情",
+      "en": "Xiang Yue Qing"
+    },
+    "description": "基于湘粤情真实菜单数据的手机 AI 点菜助手。",
+    "descriptions": {
+      "zh-Hans": "基于湘粤情真实菜单数据的手机 AI 点菜助手。",
+      "zh-Hant": "基於湘粵情真實菜單資料的手機 AI 點菜助手。",
+      "en": "A mobile AI ordering assistant based on the real Xiang Yue Qing menu."
+    }
+  },
+  "items": [
+    {
+      "id": "22566649",
+      "name": "Macau Roast Meat",
+      "originalName": "澳门烧肉 Macau Roast Meat",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/d8d5a3d8-e803-445c-975f-d05708f0dd2e_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566650",
+      "name": "Guangzhou-style Roasted Duck",
+      "originalName": "广式烧鸭 Guangzhou-style Roasted Duck",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/bbabbe96-9ff0-435f-a766-3836bc5a137e_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566651",
+      "name": "Beijing-style skin-sliced Duck",
+      "originalName": "北京片皮鸭 Beijing-style skin-sliced Duck",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/660d48a8-57d1-42b2-a365-4dd96a4e1f1d_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566659",
+      "name": "Royal Chicken",
+      "originalName": "贵妃鸡 Royal Chicken",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/e411ce2d-2e97-404e-959b-1fb08966860f_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "chicken",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566660",
+      "name": "Black Gold BBQ Pork",
+      "originalName": "黑金叉烧 Black Gold BBQ Pork",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/7ee92b4b-da83-461e-bd81-36c36643a4ac_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "pork",
+        "rich",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566663",
+      "name": "Boston Lobster",
+      "originalName": "波士鲜龙虾",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/61c137b8-d4f6-4c41-a479-41c30ece24d6_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22566664",
+      "name": "Live Swimming Crab",
+      "originalName": "灵动游水螃蟹",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/41694fc7-64af-4f76-9995-860b00485dcd_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22566672",
+      "name": "Stir-Fried White beech (shimejie)Mushrooms itch Conch Slices",
+      "originalName": "白玉菇爆响螺片 Stir-Fried White beech (shimejie)Mushrooms itch Conch Slices",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/00ec8556-af9f-47fd-b82b-55b60214664e_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566673",
+      "name": "Baked Tiger Prawns with Maggi Sauce and Perilla",
+      "originalName": "美极紫苏焗老虎虾 Baked Tiger Prawns with Maggi Sauce and Perilla",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/ba769a1a-9a2d-4a52-a31e-c81c8483f4c0_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566683",
+      "name": "Shunde-Style Stir-Fry",
+      "originalName": "顺德小炒皇 Shunde-Style Stir-Fry",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/cc41f1e2-617b-4ca0-884b-30fcd56c2459_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566684",
+      "name": "Saut ed Snowflake Beef with Scallions and Black Truffle",
+      "originalName": "黑松露葱爆雪花牛柳 Sautéed Snowflake Beef with Scallions and Black Truffle",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/c4cb0814-3a81-4205-93e0-681e33a56cee_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "beef",
+        "savory",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566685",
+      "name": "Black Pepper Beef Short Ribs",
+      "originalName": "黑椒牛仔骨",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/a2a456cd-2414-4163-86dc-9f18546dabf1_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "cantonese",
+        "roasted",
+        "beef",
+        "savory",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566686",
+      "name": "Amber Walnut Lotus Pond",
+      "originalName": "琥珀核桃荷塘月色",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/2355a3a1-c39d-47e4-ad64-a8382d4eb1ce_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566687",
+      "name": "Stir-Fried Choy Sum",
+      "originalName": "生炒菜心 Stir-Fried Choy Sum",
+      "category": "vegetable",
+      "photoUrl": "https://www.fbgcdn.com/pictures/90470998-65fd-49e0-a602-d5753c375ef0.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "vegetable",
+        "wok-fried",
+        "fresh"
+      ],
+      "textureTags": [
+        "crisp-edged",
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22566688",
+      "name": "Boiled Gai Lan in Light Sauce",
+      "originalName": "白灼芥兰 Boiled Gai Lan in Light Sauce",
+      "category": "vegetable",
+      "photoUrl": "https://www.fbgcdn.com/pictures/c9fabc4d-7d48-423d-bd9f-882fe5aca6ef_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "vegetable",
+        "fresh"
+      ],
+      "textureTags": [
+        "crisp-edged",
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22566689",
+      "name": "Stir-Fried Rice Noodles with Beef",
+      "originalName": "干炒牛河 Stir-Fried Rice Noodles with Beef",
+      "category": "staple",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "beef",
+        "savory",
+        "wok-fried",
+        "starchy"
+      ],
+      "textureTags": [
+        "crisp-edged",
+        "soft"
+      ]
+    },
+    {
+      "id": "22566690",
+      "name": "Roast Pork Belly Tofu Clay Pot",
+      "originalName": "烧腩豆腐煲",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/31dee3df-b75d-467c-80bc-c176d7aebae0_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "roasted",
+        "vegetable",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566700",
+      "name": "Dried Scallop Mushroom Tofu Soup",
+      "originalName": "瑶柱菇丝豆腐羹",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/0ad2408b-385e-4694-afa6-7f89ae593960_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "soup",
+        "comforting"
+      ],
+      "textureTags": [
+        "soft"
+      ]
+    },
+    {
+      "id": "22566704",
+      "name": "Crab Roe and Fish Maw Soup",
+      "originalName": "锦绣蟹金鱼肚羹",
+      "category": "main",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "seafood",
+        "soup",
+        "comforting"
+      ],
+      "textureTags": [
+        "soft"
+      ]
+    },
+    {
+      "id": "22566708",
+      "name": "West Lake Beef Soup",
+      "originalName": "西湖醉牛羹",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/7a9634ac-342a-4f75-adb9-e39b4d233a29_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "beef",
+        "soup",
+        "comforting"
+      ],
+      "textureTags": [
+        "soft"
+      ]
+    },
+    {
+      "id": "22566709",
+      "name": "Cream Corn Chicken Soup",
+      "originalName": "粟米鸡茸羹",
+      "category": "main",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "cantonese",
+        "chicken",
+        "soup",
+        "comforting"
+      ],
+      "textureTags": [
+        "soft"
+      ]
+    },
+    {
+      "id": "22566715",
+      "name": "Insta Star Braised Pork",
+      "originalName": "酱色流金网红扣肉 Insta‑Star Braised Pork",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/e332a884-13fd-4f40-94c6-66a1e6483c7f_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "pork",
+        "rich",
+        "braised",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22566717",
+      "name": "Braised Pork Ribs with Pickled Vegetables",
+      "originalName": "捞菜排骨 Braised Pork Ribs with Pickled Vegetables",
+      "category": "cold_appetizer",
+      "photoUrl": "https://www.fbgcdn.com/pictures/c8e04af3-60ab-4324-965d-c922504bcd78_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "pork",
+        "rich",
+        "braised"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22566719",
+      "name": "Dong an Chicken A National Banquet Classic",
+      "originalName": "国宴东安鸡 Dong’an Chicken – A National Banquet Classic",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/bc15444c-8507-4dd1-a92c-12b660bbebd2_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "chicken",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22566722",
+      "name": "Country Style Stir Fried Pork",
+      "originalName": "农家小炒肉 Country‑Style Stir‑Fried Pork",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/01c3b54f-18d4-4bc7-a29f-b2fe4ae5df64_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "pork",
+        "rich",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566723",
+      "name": "Sizzling Beef Tendon & Tripe in Dry Pot",
+      "originalName": "干锅牛筋肚 Sizzling Beef Tendon & Tripe in Dry Pot",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/7ef61d0e-3d44-4255-bcc8-17e0ed7bb894_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "beef",
+        "savory",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22566724",
+      "name": "Spicy Sichuan Dry Fried Chicken",
+      "originalName": "湘辣鸡翅 Spicy Sichuan Dry‑Fried Chicken",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/5d02083f-3619-4bd7-aa45-92e41f19647c_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "chicken",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566727",
+      "name": "Stir fried Pork Intestines with Green Peppers",
+      "originalName": "米香炒肥肠 Stir‑fried Pork Intestines with Green Peppers",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/e7ae3aab-e496-4566-8b54-1237b08a4c7c_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "pork",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566736",
+      "name": "Dry Pot Shredded Pork Tripe with Pickled Bamboo Shoots",
+      "originalName": "干锅腌笋肚丝 Dry Pot Shredded Pork Tripe with Pickled Bamboo Shoots",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/5ae2f125-5b95-4043-b1fb-d1446c5bce79_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "pork",
+        "savory",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22566738",
+      "name": "Pickled Beans with Chicken Gizzards",
+      "originalName": "酸豆角炒鸡胗 Pickled Beans with Chicken Gizzards",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/dfdf52de-d35b-43eb-bb0a-a2ee1166e92d_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "chicken",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566740",
+      "name": "Stir-Fried Clams with Black Bean and Chili",
+      "originalName": "香辣花蚬 Stir-Fried Clams with Black Bean and Chili",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/edb556b6-0234-4293-8787-2a9d35a868ef_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "seafood",
+        "vegetable",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566741",
+      "name": "Stir-fried Eggs with Hunan Waipo Cai",
+      "originalName": "外婆菜炒鸡蛋 Stir-fried Eggs with Hunan “Waipo Cai",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/691f8bf0-a726-4ae3-a912-be0fe6879955_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566745",
+      "name": "Braised Pork Belly in Soy Sauce",
+      "originalName": "湘味红烧肉 Braised Pork Belly in Soy Sauce",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/55570697-c509-4f2f-be08-288b6deeaa72_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "pork",
+        "rich",
+        "braised",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22566748",
+      "name": "Stir Fried Braised Pork with Smased Chili Peppers",
+      "originalName": "擂辣椒扣肉 Stir Fried Braised Pork with Smased Chili Peppers",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/6681f239-220b-4b6a-8849-b34220124b50_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "pork",
+        "rich",
+        "wok-fried",
+        "braised",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged",
+        "tender"
+      ]
+    },
+    {
+      "id": "22566750",
+      "name": "Steamed Pork with Black Bean and Chili",
+      "originalName": "豆豉辣椒蒸肉",
+      "category": "main",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "pork",
+        "savory",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22566769",
+      "name": "tir fried Abalone with Green Peppers",
+      "originalName": "椒香鲍鱼 tir‑fried Abalone with Green Peppers",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "seafood",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22566774",
+      "name": "Spicy Steamed Fish with Fermented Black",
+      "originalName": "湘味豉香蒸黄花鱼 Spicy Steamed Fish with Fermented Black",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "seafood",
+        "savory",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22566775",
+      "name": "Steamed Fish with Chopped Chili",
+      "originalName": "岳麓剁椒鱼 Steamed Fish with Chopped Chili",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22566913",
+      "name": "Sizzling You Squid Tentacles",
+      "originalName": "湘辣干锅鱿鱼 Sizzling You Squid Tentacles",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22566914",
+      "name": "Garlic Chopped Chili Steamed Prawns Rise & Shine Style",
+      "originalName": "湘辣蒜蓉虾 Garlic‑Chopped Chili Steamed Prawns – Rise & Shine Style",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22566915",
+      "name": "C) Spicy Steamed Fish with Fermented Black Beans",
+      "originalName": "湘味豉香蒸黄花鱼(C) Spicy Steamed Fish with Fermented Black Beans",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "seafood",
+        "savory",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22567004",
+      "name": "Crushed Chili Green Beans",
+      "originalName": "擂辣椒豆角 Crushed Chili Green Beans",
+      "category": "vegetable",
+      "photoUrl": "https://www.fbgcdn.com/pictures/d8534c28-3e0e-4557-9c49-b0cadd3ea690_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "vegetable",
+        "fresh"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567008",
+      "name": "Aromatic Tofu Strips",
+      "originalName": "湖南攸县香干 Aromatic Tofu Strips",
+      "category": "vegetable",
+      "photoUrl": "https://www.fbgcdn.com/pictures/43c5245c-5808-47d7-a03d-00094dcea238_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "vegetable",
+        "fresh"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567011",
+      "name": "Hearty Bowl of Cauliflower",
+      "originalName": "香煸花菜 Hearty Bowl of Cauliflower",
+      "category": "vegetable",
+      "photoUrl": "https://www.fbgcdn.com/pictures/74bc840d-8155-460a-bc3f-196502888323_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "vegetable",
+        "fresh"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567022",
+      "name": "Stir Fried Lotus Root Slivers with Pickled Long Bean",
+      "originalName": "酸豆角炒藕丝 Stir‑Fried Lotus Root Slivers with Pickled Long Bean",
+      "category": "cold_appetizer",
+      "photoUrl": "https://www.fbgcdn.com/pictures/5f4d6c55-7b4a-424f-aec8-5023be55f3ee_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "vegetable",
+        "wok-fried"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22567023",
+      "name": "Fantastic Tofu",
+      "originalName": "过桥豆腐 Fantastic Tofu",
+      "category": "vegetable",
+      "photoUrl": "https://www.fbgcdn.com/pictures/edfa7894-3e6e-49f8-a95c-04d86b0148a5_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "vegetable",
+        "fresh"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567024",
+      "name": "Fragrant Shredded Taro",
+      "originalName": "贵妃香芋丝 Fragrant Shredded Taro",
+      "category": "vegetable",
+      "photoUrl": "https://www.fbgcdn.com/pictures/72ad3c39-c516-48a5-bdef-e78abdc59fd8_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "vegetable",
+        "fresh"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567037",
+      "name": "Soy Sauce Fried Rice",
+      "originalName": "酱香炒饭 Soy Sauce Fried Rice",
+      "category": "staple",
+      "portion": "large",
+      "shareable": false,
+      "spicyLevel": 1,
+      "tags": [
+        "wok-fried",
+        "starchy",
+        "savory"
+      ],
+      "textureTags": [
+        "crisp-edged",
+        "soft"
+      ]
+    },
+    {
+      "id": "22567038",
+      "name": "Shrimp Fried Rice",
+      "originalName": "虾仁炒饭 Shrimp Fried Rice",
+      "category": "staple",
+      "photoUrl": "https://www.fbgcdn.com/pictures/abffaaf0-58e2-451c-84b5-dfe7fc5579d2_d2.jpg",
+      "portion": "large",
+      "shareable": false,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "seafood",
+        "vegetable",
+        "wok-fried",
+        "starchy"
+      ],
+      "textureTags": [
+        "crisp-edged",
+        "soft"
+      ]
+    },
+    {
+      "id": "22567041",
+      "name": "Dong an Chicken A National Banquet Classic",
+      "originalName": "国宴东安鸡 Dong’an Chicken – A National Banquet Classic",
+      "category": "cold_appetizer",
+      "photoUrl": "https://www.fbgcdn.com/pictures/c9f7a724-41da-4cba-a324-127e3c58a62d_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "chicken",
+        "cold"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567042",
+      "name": "Hot Marinated Delights, Changsha Style",
+      "originalName": "长沙热卤 Hot‑Marinated Delights, Changsha Style",
+      "category": "cold_appetizer",
+      "photoUrl": "https://www.fbgcdn.com/pictures/d3eb9c47-6cee-4a1b-8346-9fc12f07c024_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "fresh",
+        "cold"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567044",
+      "name": "Hunan Style Marinated Jellyfish Head Salad",
+      "originalName": "湘式凉拌海蜇头 Hunan‑Style Marinated Jellyfish Head Salad",
+      "category": "cold_appetizer",
+      "photoUrl": "https://www.fbgcdn.com/pictures/11d6dd27-54aa-40d6-a844-f39afc67f130_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "seafood",
+        "fresh",
+        "cold"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567045",
+      "name": "Mouthwatering Chicken",
+      "originalName": "口水鸡 Mouthwatering Chicken",
+      "category": "cold_appetizer",
+      "photoUrl": "https://www.fbgcdn.com/pictures/eab55bba-b74d-49ce-b1cd-b4838571e111_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "chicken",
+        "fresh",
+        "cold"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567046",
+      "name": "Spicy Pickled Cucumber",
+      "originalName": "泡椒开胃黄瓜 Spicy Pickled Cucumber",
+      "category": "cold_appetizer",
+      "photoUrl": "https://www.fbgcdn.com/pictures/f8006baa-c61f-4dbe-9b05-9e905ce6050b_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "vegetable",
+        "fresh",
+        "cold"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567054",
+      "name": "Walnut Pork Ribs",
+      "originalName": "核桃排骨 Walnut Pork Ribs",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/9c8a4ca0-51e0-4cdb-a90b-d9e0dca2bc13_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "pork",
+        "rich",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567055",
+      "name": "Hunan Style Stir Fried Beef",
+      "originalName": "小炒牛肉 Hunan‑Style Stir‑Fried Beef",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/cd105686-66b0-4a1e-8cc1-37e15641b73a_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "beef",
+        "savory",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22567056",
+      "name": "Hunan Style Stir Fried Lamb",
+      "originalName": "小炒羊肉 Hunan‑Style Stir‑Fried Lamb",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/cbf410b1-a83d-4189-ab65-144ed62e6fba_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "wok-fried",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22567069",
+      "name": "Crispy Fragrant Chicken",
+      "originalName": "奇妙麦香鸡 Crispy Fragrant Chicken",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/9801123a-98b2-41d9-9077-b30cdad4c4b1_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "chicken",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22567070",
+      "name": "Kung Pao Chicken",
+      "originalName": "宫保鸡丁 Kung Pao Chicken",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/07766c21-a3e1-40a9-ba67-60a61a22639b_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "chicken",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567072",
+      "name": "General Tso s Chicken",
+      "originalName": "左宗棠鸡 General Tso’s Chicken",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/ae4032c9-cdf4-4015-8460-ab722d56a2bb_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "chicken",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567073",
+      "name": "Dry Fried String Beans",
+      "originalName": "干煸四季豆 Dry Fried String Beans",
+      "category": "vegetable",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "vegetable",
+        "wok-fried",
+        "fresh"
+      ],
+      "textureTags": [
+        "crunchy"
+      ]
+    },
+    {
+      "id": "22567074",
+      "name": "Orange Peel Chicken",
+      "originalName": "陈皮鸡 Orange Peel Chicken",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/baae0bc5-cd03-4c19-a1bd-a94252780567_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "chicken",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567077",
+      "name": "Chicken with Broccoli",
+      "originalName": "西兰花炒鸡肉 Chicken with Broccoli",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/91153f83-e6a4-491a-8959-f41fe9f20802.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "chicken",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567078",
+      "name": "Sweet & Sour Chicken",
+      "originalName": "甜酸鸡 Sweet & Sour Chicken",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/fe2068d3-ebdd-4362-87c8-17e975a1d2e8.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "chicken",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567089",
+      "name": "Honey Walnut Shrimp",
+      "originalName": "核桃虾 Honey Walnut Shrimp",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/2877c1b6-16ac-463b-8728-3735f4ee4cc6_d2.jpg",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567091",
+      "name": "Mapo Tofu",
+      "originalName": "麻婆豆腐 Mapo Tofu",
+      "category": "vegetable",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "spicy",
+        "vegetable",
+        "savory"
+      ],
+      "textureTags": [
+        "soft"
+      ]
+    },
+    {
+      "id": "22567097",
+      "name": "Rice",
+      "originalName": "米饭 Rice",
+      "category": "staple",
+      "photoUrl": "https://www.fbgcdn.com/pictures/ec520276-705b-40a2-805f-d724e361e000_d2.jpg",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "starchy"
+      ],
+      "textureTags": [
+        "soft"
+      ]
+    },
+    {
+      "id": "22567099",
+      "name": "Dry-mixed Pasta",
+      "originalName": "干拌意面 Dry-mixed Pasta",
+      "category": "staple",
+      "portion": "medium",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "noodle",
+        "starchy",
+        "savory"
+      ],
+      "textureTags": [
+        "soft"
+      ]
+    },
+    {
+      "id": "22567100",
+      "name": "Sesame Balls",
+      "originalName": "芝麻球",
+      "category": "dessert",
+      "portion": "small",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "snack",
+        "sweet"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22567101",
+      "name": "Brown Sugar Glutinous Rice Cakes",
+      "originalName": "红糖糍粑",
+      "category": "main",
+      "photoUrl": "https://www.fbgcdn.com/pictures/79974af6-c276-4c42-96fc-f71f912cdce7_d2.jpg",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "snack",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567103",
+      "name": "Spring Rolls",
+      "originalName": "春卷",
+      "category": "dessert",
+      "portion": "small",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "snack",
+        "crisp"
+      ],
+      "textureTags": [
+        "crisp-edged"
+      ]
+    },
+    {
+      "id": "22567118",
+      "name": "Wanglaoji Herbal Tea",
+      "originalName": "王老吉",
+      "category": "drink",
+      "photoUrl": "https://www.fbgcdn.com/pictures/7104a2fc-ac0e-416b-bf00-7231f819cc6e_d2.jpg",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "drink"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567120",
+      "name": "Coke",
+      "originalName": "可乐 Coke",
+      "category": "drink",
+      "photoUrl": "https://www.fbgcdn.com/pictures/37ac9593-afe8-405c-9bd0-a223e19abaa4_d2.jpg",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "drink"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567121",
+      "name": "Diet Coke",
+      "originalName": "健怡可乐 Diet Coke",
+      "category": "drink",
+      "photoUrl": "https://www.fbgcdn.com/pictures/b78208a5-c443-4738-847a-293518757837.jpg",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "drink"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567122",
+      "name": "Sprite",
+      "originalName": "雪碧 Sprite",
+      "category": "drink",
+      "photoUrl": "https://www.fbgcdn.com/pictures/c0160079-52b7-42fd-866a-94efa06e5337.jpg",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "drink"
+      ],
+      "textureTags": [
+        "savory"
+      ]
+    },
+    {
+      "id": "22567131",
+      "name": "Eastern Star Grouper (Market Price)",
+      "originalName": "东星斑时价",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22567132",
+      "name": "Australian Lobster (Market Price)",
+      "originalName": "澳龙时价",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22567133",
+      "name": "Tiger Grouper (Market Price)",
+      "originalName": "老虎斑时价",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22567135",
+      "name": "Turbot (Market Price)",
+      "originalName": "多宝鱼时价",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    },
+    {
+      "id": "22567136",
+      "name": "Geoduck Clam (Market Price)",
+      "originalName": "象拔蚌时价",
+      "category": "main",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "seafood",
+        "centerpiece"
+      ],
+      "textureTags": [
+        "tender"
+      ]
+    }
+  ]
+}
