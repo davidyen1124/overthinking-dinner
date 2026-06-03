@@ -40,7 +40,7 @@ type LocaleCopy = {
   peopleUnit: string
   back: string
   preparingFirstRound: string
-  readyForAi: string
+  orderGuideTitle: string
   suitableForPeople: (count: number) => string
   aiChoosing: string
   aiRecommendation: string
@@ -49,7 +49,8 @@ type LocaleCopy = {
   recommendationBasis: string
   restartHint: string
   selected: string
-  selectedDishes: (count: number) => string
+  selectedItemsTitle: string
+  selectedDishCount: (count: number) => string
   closeOrder: string
   emptyOrder: string
   removeDish: (name: string) => string
@@ -85,7 +86,7 @@ export const copy = {
     peopleUnit: '位用餐',
     back: '返回',
     preparingFirstRound: '正在搭配第一轮...',
-    readyForAi: '准备让 AI 推荐',
+    orderGuideTitle: '点菜建议',
     suitableForPeople: (count: number) => `适合 ${count} 位用餐`,
     aiChoosing: 'AI 正在挑选',
     aiRecommendation: 'AI 推荐',
@@ -94,7 +95,8 @@ export const copy = {
     recommendationBasis: '会结合人数、食量、口味方向和真实菜单。',
     restartHint: '返回首页后可以重新开始。',
     selected: '已选',
-    selectedDishes: (count: number) => `已选 ${count} 道菜`,
+    selectedItemsTitle: '点单清单',
+    selectedDishCount: (count: number) => `${count} 道菜`,
     closeOrder: '关闭已选菜单',
     emptyOrder: '从 AI 推荐里加菜，慢慢凑成一桌。',
     removeDish: (name: string) => `移除${name}`,
@@ -140,7 +142,7 @@ export const copy = {
     peopleUnit: '位',
     back: '返回',
     preparingFirstRound: '正在搭配第一輪餐點...',
-    readyForAi: '準備好讓 AI 推薦',
+    orderGuideTitle: '點餐建議',
     suitableForPeople: (count: number) => `適合 ${count} 位`,
     aiChoosing: 'AI 正在幫你挑',
     aiRecommendation: 'AI 推薦',
@@ -149,7 +151,8 @@ export const copy = {
     recommendationBasis: '會依人數、食量、口味偏好和店家菜單來搭配。',
     restartHint: '回到首頁就能重新開始。',
     selected: '已選',
-    selectedDishes: (count: number) => `已選 ${count} 道`,
+    selectedItemsTitle: '點餐清單',
+    selectedDishCount: (count: number) => `${count} 道`,
     closeOrder: '關閉已選餐點',
     emptyOrder: '從 AI 推薦加入餐點，慢慢湊出一桌剛好的菜。',
     removeDish: (name: string) => `移除 ${name}`,
@@ -195,7 +198,7 @@ export const copy = {
     peopleUnit: 'people dining',
     back: 'Back',
     preparingFirstRound: 'Pairing the first round...',
-    readyForAi: 'Ready for AI recommendations',
+    orderGuideTitle: 'Ordering guide',
     suitableForPeople: (count: number) => `Good for ${count} ${count === 1 ? 'person' : 'people'}`,
     aiChoosing: 'AI is choosing',
     aiRecommendation: 'AI Recommendation',
@@ -204,7 +207,8 @@ export const copy = {
     recommendationBasis: 'Based on party size, appetite, flavor direction, and the real menu.',
     restartHint: 'Go back home to start over.',
     selected: 'Selected',
-    selectedDishes: (count: number) => `${count} ${count === 1 ? 'dish' : 'dishes'} selected`,
+    selectedItemsTitle: 'Order list',
+    selectedDishCount: (count: number) => `${count} ${count === 1 ? 'dish' : 'dishes'}`,
     closeOrder: 'Close selected dishes',
     emptyOrder: 'Add dishes from the AI recommendations to build the table.',
     removeDish: (name: string) => `Remove ${name}`,

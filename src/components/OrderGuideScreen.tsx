@@ -70,11 +70,7 @@ export function OrderGuideScreen({
           </button>
           <div>
             <div className="text-lg font-black leading-tight text-[#251814]">
-              {guide
-                ? guide.title
-                : loading
-                  ? text.preparingFirstRound
-                  : text.readyForAi}
+              {loading ? text.preparingFirstRound : text.orderGuideTitle}
             </div>
             <div className="mt-0.5 text-xs font-bold text-[#846455]">
               {text.suitableForPeople(peopleCount)}
@@ -155,10 +151,10 @@ export function OrderGuideScreen({
           <div className="flex items-center justify-between gap-3 border-b border-[#ead8b7] px-4 py-3">
             <div>
               <Dialog.Title className="app-order-dialog-title uppercase tracking-wide">
-                {text.selected}
+                {text.selectedItemsTitle}
               </Dialog.Title>
               <Dialog.Description className="app-order-dialog-description">
-                {text.selectedDishes(selectedItems.length)}
+                {text.selectedDishCount(selectedItems.length)}
               </Dialog.Description>
             </div>
             <Dialog.Close>
@@ -171,13 +167,6 @@ export function OrderGuideScreen({
               </IconButton>
             </Dialog.Close>
           </div>
-
-          {guide?.status === 'complete' ? (
-            <div className="border-b border-[#ead8b7] bg-[#f7ead4] px-4 py-3">
-              <div className="text-sm font-black leading-5 text-[#251814]">{guide.title}</div>
-              <p className="mt-1 text-sm font-semibold leading-5 text-[#6c4b3d]">{guide.description}</p>
-            </div>
-          ) : null}
 
           <div className="max-h-[50svh] overflow-y-auto px-3 py-2">
             {selectedItems.length ? (
