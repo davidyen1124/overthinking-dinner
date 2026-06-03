@@ -168,7 +168,7 @@ export function OverthinkingDinner() {
 
   if (!menu) {
     return (
-      <main className="grid min-h-svh w-full place-items-center px-4">
+      <main className="app-screen app-screen-loading grid min-h-svh w-full place-items-center px-4">
         <div className="text-center">
           <LoaderCircle className="mx-auto animate-spin text-[#9e1f2d]" size={34} />
           <div className="mt-3 text-sm font-black uppercase tracking-wide text-[#705142]">

@@ -51,8 +51,14 @@ export function OrderGuideScreen({
   const text = copy[locale]
 
   return (
-    <main className={showFooter ? 'min-h-svh w-full pb-20' : 'min-h-svh w-full pb-8'}>
-      <header className="sticky top-0 z-20 border-b border-[#ead8b7] bg-[#fff8ea]/95 px-4 py-3 backdrop-blur">
+    <main
+      className={
+        showFooter
+          ? 'app-screen app-screen-menu min-h-svh w-full pb-20'
+          : 'app-screen app-screen-menu min-h-svh w-full pb-8'
+      }
+    >
+      <header className="app-top-bar sticky top-0 z-20 border-b border-[#d8c79f] px-4 py-3 backdrop-blur">
         <div className="flex items-center gap-3">
           <button
             className="grid h-10 w-10 place-items-center rounded-[8px] bg-[#f2e3c8] text-[#3b2921]"
@@ -80,7 +86,7 @@ export function OrderGuideScreen({
       <section className="space-y-4 px-4 pt-4">
         {guide ? (
           <>
-            <section className="rounded-[8px] border border-[#ead8b7] bg-white p-4 shadow-sm">
+            <section className="app-control-panel rounded-[8px] border border-[#ead8b7] p-4 shadow-sm">
               <div className="flex items-center gap-2 text-[#9e1f2d]">
                 <Sparkles size={18} fill="currentColor" />
                 <div className="text-sm font-black uppercase tracking-wide">{guide.title}</div>
@@ -110,7 +116,7 @@ export function OrderGuideScreen({
           </>
         ) : (
           <section className="space-y-4">
-            <div className="rounded-[8px] border border-[#ead8b7] bg-white p-5 shadow-sm">
+            <div className="app-control-panel rounded-[8px] border border-[#ead8b7] p-5 shadow-sm">
               <div className="flex items-center gap-2 text-[#9e1f2d]">
                 <Sparkles size={19} fill="currentColor" />
                 <div className="text-sm font-black uppercase tracking-wide">
@@ -212,7 +218,7 @@ export function OrderGuideScreen({
       </Dialog.Root>
 
       {showFooter ? (
-        <footer className="fixed inset-x-0 bottom-0 z-30 w-full border-t border-[#ead8b7] bg-[#fff8ea]/95 px-4 pb-3 pt-3 backdrop-blur">
+        <footer className="app-bottom-bar fixed inset-x-0 bottom-0 z-30 w-full border-t border-[#d8c79f] px-4 pb-3 pt-3 backdrop-blur">
           <div className="grid grid-cols-2 gap-2">
             <button
               className={[

@@ -33,7 +33,7 @@ export function StartScreen({
   const text = copy[locale]
 
   return (
-    <main className="flex min-h-svh w-full flex-col justify-between px-4 pb-6 pt-6">
+    <main className="app-screen app-screen-start flex min-h-svh w-full flex-col justify-between px-4 pb-6 pt-6">
       <div>
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-center gap-2 text-[#9e1f2d]">
@@ -43,7 +43,7 @@ export function StartScreen({
           <div className="w-36">
             <div className="sr-only">{text.language}</div>
             <SegmentedControl.Root
-              className="app-segmented app-segmented-compact"
+              className="app-segmented app-segmented-3 app-segmented-compact"
               radius="medium"
               size="1"
               value={locale}
@@ -72,7 +72,7 @@ export function StartScreen({
               <Users size={17} />
               {text.partySizeQuestion}
             </div>
-            <div className="flex items-center justify-between rounded-[8px] border border-[#e7d5b7] bg-white px-3 py-3 shadow-sm">
+            <div className="app-control-panel flex items-center justify-between rounded-[8px] border border-[#e7d5b7] px-3 py-3 shadow-sm">
               <IconButton
                 className="app-stepper-button app-stepper-button-muted active:scale-95"
                 disabled={peopleCount <= 1}
@@ -103,7 +103,7 @@ export function StartScreen({
           <section>
             <div className="mb-2 text-sm font-extrabold text-[#3b2921]">{text.appetite}</div>
             <SegmentedControl.Root
-              className="app-segmented"
+              className="app-segmented app-segmented-3"
               radius="medium"
               size="3"
               value={appetite}
@@ -124,7 +124,7 @@ export function StartScreen({
           <section>
             <div className="mb-2 text-sm font-extrabold text-[#3b2921]">{text.vibe}</div>
             <SegmentedControl.Root
-              className="app-segmented"
+              className="app-segmented app-segmented-4"
               radius="medium"
               size="3"
               value={vibe}
