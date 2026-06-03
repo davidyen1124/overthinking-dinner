@@ -18,6 +18,11 @@
     {
       "id": "yaichi-matsu-bowl",
       "name": "Matsu Bowl",
+      "names": {
+        "en": "Matsu Bowl",
+        "zh-Hans": "松级海鲜丼",
+        "zh-Hant": "松級海鮮丼"
+      },
       "originalName": "Matsu Bowl (Superior): Take Bowl ingredients plus Hokkaido sea urchin.",
       "category": "main",
       "price": "$41.00",
@@ -39,6 +44,11 @@
     {
       "id": "yaichi-take-bowl",
       "name": "Take Bowl",
+      "names": {
+        "en": "Take Bowl",
+        "zh-Hans": "竹级海鲜丼",
+        "zh-Hant": "竹級海鮮丼"
+      },
       "originalName": "Take Bowl (Premium): Ume Bowl ingredients plus marinated Hokkaido salmon roe.",
       "category": "main",
       "price": "$32.00",
@@ -59,6 +69,11 @@
     {
       "id": "yaichi-ume-bowl",
       "name": "Ume Bowl",
+      "names": {
+        "en": "Ume Bowl",
+        "zh-Hans": "梅级海鲜丼",
+        "zh-Hant": "梅級海鮮丼"
+      },
       "originalName": "Ume Bowl (Special): Minced tuna, Hokkaido scallop, tobiko, snow crab, shiso, and nori.",
       "category": "main",
       "price": "$26.00",
@@ -79,6 +94,11 @@
     {
       "id": "yaichi-take-trio-bukkake-udon",
       "name": "Take-Trio Bukkake Udon",
+      "names": {
+        "en": "Take-Trio Bukkake Udon",
+        "zh-Hans": "竹级三鲜冷拌乌冬面",
+        "zh-Hant": "竹級三鮮冷拌烏龍麵"
+      },
       "originalName": "Take-Trio Bukkake Udon: Snow crab, Hokkaido scallop, and salmon roe over udon and cold dashi with shiso and tempura bits.",
       "category": "staple",
       "price": "$32.00",
@@ -100,6 +120,11 @@
     {
       "id": "yaichi-shabu-shabu-beef-udon",
       "name": "Shabu-Shabu Beef Udon",
+      "names": {
+        "en": "Shabu-Shabu Beef Udon",
+        "zh-Hans": "涮涮牛肉乌冬面",
+        "zh-Hant": "涮涮牛肉烏龍麵"
+      },
       "originalName": "Shabu-Shabu Beef Udon: American Wagyu beef, soft-boiled egg, wakame, fried burdock, and yuzu.",
       "category": "staple",
       "price": "$25.00 / $31.00",
@@ -120,6 +145,11 @@
     {
       "id": "yaichi-beef-curry-udon",
       "name": "Beef Curry Udon",
+      "names": {
+        "en": "Beef Curry Udon",
+        "zh-Hans": "牛肉咖喱乌冬面",
+        "zh-Hant": "牛肉咖哩烏龍麵"
+      },
       "originalName": "Beef Curry Udon: American Wagyu beef, potato, bok choy, and curry dashi soup.",
       "category": "staple",
       "price": "$25.00 / $31.00",
@@ -141,6 +171,11 @@
     {
       "id": "yaichi-plum-udon",
       "name": "Plum Udon",
+      "names": {
+        "en": "Plum Udon",
+        "zh-Hans": "梅子乌冬面",
+        "zh-Hant": "梅子烏龍麵"
+      },
       "originalName": "Plum Udon: Plum, bonito flakes, tororo kombu, wakame, and bok choy.",
       "category": "staple",
       "price": "$22.00",
@@ -162,6 +197,11 @@
     {
       "id": "yaichi-creamy-mentaiko-udon",
       "name": "Creamy Mentaiko Udon",
+      "names": {
+        "en": "Creamy Mentaiko Udon",
+        "zh-Hans": "明太子奶油乌冬面",
+        "zh-Hant": "明太子奶油烏龍麵"
+      },
       "originalName": "Creamy Mentaiko Udon: Spicy cod roe, shiso leaf, nori seaweed, and soft-boiled egg.",
       "category": "staple",
       "price": "$24.50",
@@ -183,6 +223,11 @@
     {
       "id": "yaichi-tempura-udon",
       "name": "Tempura Udon",
+      "names": {
+        "en": "Tempura Udon",
+        "zh-Hans": "天妇罗乌冬面",
+        "zh-Hant": "天婦羅烏龍麵"
+      },
       "originalName": "Tempura Udon: Shrimp, sweet potato, pumpkin, and shishito tempura with green onion, seaweed, and yuzu.",
       "category": "staple",
       "price": "$23.50",
@@ -204,6 +249,11 @@
     {
       "id": "yaichi-nagoya-style-wings",
       "name": "Nagoya-Style Wings",
+      "names": {
+        "en": "Nagoya-Style Wings",
+        "zh-Hans": "名古屋风鸡翅",
+        "zh-Hant": "名古屋風雞翅"
+      },
       "originalName": "Nagoya-Style Wings 3pc.",
       "category": "appetizer",
       "price": "$11.00 / +$4.00",
@@ -224,6 +274,11 @@
     {
       "id": "yaichi-fried-takoyaki",
       "name": "Fried Takoyaki",
+      "names": {
+        "en": "Fried Takoyaki",
+        "zh-Hans": "炸章鱼烧",
+        "zh-Hant": "炸章魚燒"
+      },
       "originalName": "Fried Takoyaki 3pc.",
       "category": "appetizer",
       "price": "$6.00",
@@ -244,6 +299,11 @@
     {
       "id": "yaichi-kushi-age-squid-leg",
       "name": "Kushi-Age Squid Leg Skewer",
+      "names": {
+        "en": "Kushi-Age Squid Leg Skewer",
+        "zh-Hans": "炸鱿鱼脚串",
+        "zh-Hant": "炸魷魚腳串"
+      },
       "originalName": "Kushi-Age (Deep Fried Squid Leg Skewer) 1pc.",
       "category": "appetizer",
       "price": "$4.00",
@@ -264,6 +324,11 @@
     {
       "id": "yaichi-shishito-yuzu-miso",
       "name": "Shishito with Yuzu Miso",
+      "names": {
+        "en": "Shishito with Yuzu Miso",
+        "zh-Hans": "柚子味噌狮子唐青椒",
+        "zh-Hant": "柚子味噌獅子唐青椒"
+      },
       "originalName": "Shishito with Yuzu Miso.",
       "category": "vegetable",
       "price": "$6.00",
@@ -284,6 +349,11 @@
     {
       "id": "yaichi-edamame",
       "name": "Edamame",
+      "names": {
+        "en": "Edamame",
+        "zh-Hans": "毛豆",
+        "zh-Hant": "毛豆"
+      },
       "originalName": "Edamame.",
       "category": "appetizer",
       "price": "$6.00",

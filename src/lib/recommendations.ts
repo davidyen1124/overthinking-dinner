@@ -465,6 +465,7 @@ function toPromptItem(item: MenuItem) {
   return {
     id: item.id,
     name: item.name,
+    names: item.names,
     originalName: item.originalName,
     category: item.category,
     price: item.price,
