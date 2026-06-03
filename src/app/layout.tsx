@@ -5,7 +5,7 @@ import '../index.css'
 
 export const metadata: Metadata = {
   title: 'Overthinking Dinner',
-  description: 'A local AI ordering assistant for one real menu.',
+  description: 'A local AI ordering assistant for Yaichi in Milpitas.',
 }
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="zh-Hans">
+    <html lang="en">
       <body>
         <Theme accentColor="red" grayColor="sand" radius="small">
           {children}

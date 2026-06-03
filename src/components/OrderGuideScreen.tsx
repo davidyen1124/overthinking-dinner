@@ -187,7 +187,7 @@ export function OrderGuideScreen({
                       <div className="min-w-0">
                         <div className="truncate text-sm font-black text-[#251814]">{name}</div>
                         <div className="mt-1 truncate text-xs font-bold text-[#846455]">
-                          {categoryLabel(item.category, locale)}
+                          {dishMeta(item, locale)}
                         </div>
                       </div>
                       <IconButton
@@ -263,6 +263,7 @@ function SuggestionCard({
 }) {
   const text = copy[locale]
   const name = dishName(item, locale)
+  const meta = dishMeta(item, locale)
 
   return (
     <article className="grid grid-cols-[112px_1fr] overflow-hidden rounded-[8px] border border-[#ead8b7] bg-white shadow-sm">
@@ -270,6 +271,7 @@ function SuggestionCard({
       <div className="flex min-w-0 flex-col justify-between p-3">
         <div>
           <h3 className="text-base font-black leading-tight text-[#251814]">{name}</h3>
+          <div className="mt-1 truncate text-xs font-bold text-[#846455]">{meta}</div>
           <div className="mt-2 flex gap-1 overflow-hidden">
             {item.tags.slice(0, 3).map((tag) => (
               <span
@@ -302,4 +304,8 @@ function SuggestionCard({
 
 function dishImageUrl(item: MenuItem) {
   return item.photoUrl || PLACEHOLDER_DISH_IMAGE
+}
+
+function dishMeta(item: MenuItem, locale: Locale) {
+  return [categoryLabel(item.category, locale), item.price].filter(Boolean).join(' · ')
 }

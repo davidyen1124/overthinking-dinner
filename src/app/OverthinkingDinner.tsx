@@ -27,7 +27,7 @@ type OrderState = {
 export function OverthinkingDinner() {
   const [menu, setMenu] = useState<RestaurantMenu | null>(null)
   const [screen, setScreen] = useState<Screen>('start')
-  const [peopleCount, setPeopleCount] = useState(5)
+  const [peopleCount, setPeopleCount] = useState(3)
   const [appetite, setAppetite] = useState<Appetite>('normal')
   const [vibe, setVibe] = useState<Vibe>('balanced')
   const [locale, setLocaleState] = useState<Locale>(defaultLocale)
