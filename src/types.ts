@@ -9,6 +9,7 @@ export type MenuItem = {
   names?: Partial<Record<Locale, string>>
   originalName: string
   category: string
+  price?: string
   photoUrl?: string
   portion: 'small' | 'medium' | 'large'
   shareable: boolean
