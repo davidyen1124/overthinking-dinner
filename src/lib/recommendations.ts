@@ -98,11 +98,10 @@ type ChatMessage = {
 
 function buildInstructions(locale: RecommendRequest['locale']) {
   const localizedRule = {
-    'zh-Hans':
-      'All user-facing text must be Simplified Chinese. title must be at most 18 Chinese characters; description must be at most 70 Chinese characters.',
+    'zh-Hans': 'All user-facing text must be Simplified Chinese.',
     'zh-Hant':
-      'All user-facing text must be natural Taiwanese Mandarin in Traditional Chinese, not a Simplified Chinese conversion. Use Taiwanese restaurant wording such as 點餐, 餐點, 菜單, 飲品, and 甜點 where appropriate. title must be at most 18 Chinese characters; description must be at most 70 Chinese characters.',
-    en: 'All user-facing text must be natural English. title must be at most 8 words; description must be at most 28 words.',
+      'All user-facing text must be natural Taiwanese Mandarin in Traditional Chinese, not a Simplified Chinese conversion. Use Taiwanese restaurant wording such as 點餐, 餐點, 菜單, 飲品, and 甜點 where appropriate.',
+    en: 'All user-facing text must be natural English.',
   }[locale]
 
   return [
@@ -126,7 +125,6 @@ function buildInstructions(locale: RecommendRequest['locale']) {
     'When status is complete, title must clearly say the table has enough food and must not ask whether to keep adding dishes.',
     'description may explain this round of recommendations or, when complete, why the portion is suitable.',
     'description should mention only the current ordered dishes or this round of recommended dishes.',
-    'For English, keep title punchy and do not use a subtitle after a dash, colon, or semicolon.',
     'Return exactly one JSON object matching this TypeScript type: { status: "pairing" | "complete"; title: string; description: string; recommendedItemIds: string[] }.',
     'Do not wrap the JSON in Markdown fences. Do not include commentary before or after the JSON.',
   ].join('\n')
@@ -234,7 +232,7 @@ function validateGuide(value: unknown, menu: RestaurantMenu, request: RecommendR
     seen.add(id)
   }
 
-  guide = normalizeLocalizedText(normalizeOpeningGuide(guide, menu, request), request.locale)
+  guide = normalizeOpeningGuide(guide, menu, request)
 
   if (guide.status === 'complete') {
     return { ...guide, recommendedItemIds: [] }
@@ -313,38 +311,6 @@ function openingItemScore(item: MenuItem, usedCategories: Set<string>) {
     (item.shareable ? 8 : 0) +
     (item.portion === 'large' ? 5 : item.portion === 'medium' ? 3 : 0)
   )
-}
-
-function normalizeLocalizedText(
-  guide: GuideResponse,
-  locale: RecommendRequest['locale'],
-): GuideResponse {
-  if (locale === 'en') {
-    const plainTitle = guide.title.split(/[;:—–-]/)[0]?.trim() || guide.title
-    return {
-      ...guide,
-      title: limitWords(plainTitle, 8),
-      description: limitWords(guide.description, 28),
-    }
-  }
-
-  return {
-    ...guide,
-    title: limitVisibleLength(guide.title, 18),
-    description: limitVisibleLength(guide.description, 70),
-  }
-}
-
-function limitWords(text: string, maxWords: number) {
-  const words = text.trim().split(/\s+/).filter(Boolean)
-  if (words.length <= maxWords) return text.trim()
-  return words.slice(0, maxWords).join(' ')
-}
-
-function limitVisibleLength(text: string, maxLength: number) {
-  const chars = Array.from(text.replace(/\s/g, ''))
-  if (chars.length <= maxLength) return text.trim()
-  return chars.slice(0, maxLength).join('')
 }
 
 function getRecommendableItems(menu: RestaurantMenu, request: RecommendRequest) {
