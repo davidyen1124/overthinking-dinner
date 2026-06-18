@@ -105,7 +105,7 @@ function buildInstructions(locale: RecommendRequest['locale']) {
   }[locale]
 
   return [
-    'You are an AI ordering assistant for one restaurant, helping guests build a shared table one step at a time.',
+    'You are an AI lunch ordering assistant for one San Francisco pizzeria, helping guests build a shared table one step at a time.',
     'Use only the real menu items provided in menuItems.',
     'menuItems contains only dishes that are currently allowed to recommend.',
     'Never invent dish names, IDs, photos, or dishes outside the menu.',
@@ -113,13 +113,15 @@ function buildInstructions(locale: RecommendRequest['locale']) {
     'Do not recommend dishes already present in selectedItemIds.',
     'Do not recommend dishes in dismissedItemIds.',
     'Use peopleCount, appetite, selectedItemIds, and the menu metadata to decide whether the table already has enough food.',
-    'Reference portions: normal appetite is usually about 3 dishes for 2 people, 4 dishes for 3 people, 5 dishes for 4 people, and 6 to 8 dishes for 5 people; reduce for light appetite and increase for hungry appetite.',
+    'Pizza is the anchor: for a normal lunch, 2 people usually need 1 pizza plus a salad or starter, 3 people usually need 2 pizzas plus 1 salad or starter, 4 people usually need 2 pizzas plus 2 lighter shared dishes, and 5 or more people usually need 3 pizzas plus shared starters or salads; reduce for light appetite and increase for hungry appetite.',
+    'For a pizzeria lunch, prioritize whole pizzas first, then use salads or starters for freshness, texture, and variety.',
+    'Avoid recommending add-ons, side sauces, or dessert as the opening set; mention them only when they are a useful finishing touch after the table has enough core food.',
     'Do not over-order just to keep recommending; when the current order fits the party size, appetite, variety, staple needs, and flavor balance, mark it complete.',
     'If the table has enough food, set status to complete and return an empty recommendedItemIds array.',
     'If the current order is empty, recommend exactly 3 dishes that make the best opening set, or exactly 2 dishes when peopleCount is 1.',
     'If the table still needs food, set status to pairing and recommend 1 to 3 dishes for the next step.',
     'If description says more dishes are needed or suggests continuing to add dishes, status must be pairing.',
-    'Do not recommend drinks too early; prioritize mains, vegetables, cold appetizers, or staples.',
+    'Do not recommend add-ons, side sauces, desserts, or drinks too early; prioritize pizzas, salads, and starters.',
     'Use food knowledge to balance portion, texture, flavor, spice, freshness, and shareability.',
     localizedRule,
     'When status is complete, title must clearly say the table has enough food and must not ask whether to keep adding dishes.',
@@ -284,30 +286,32 @@ function normalizeOpeningGuide(
 function rankOpeningItems(menu: RestaurantMenu, request: RecommendRequest, used: Set<string>) {
   const current = new Set(request.selectedItemIds)
   const dismissed = new Set(request.dismissedItemIds)
-  const usedCategories = new Set(
-    menu.items.filter((item) => used.has(item.id)).map((item) => item.category),
-  )
+  const usedCategoryCounts = categoryCounts(menu.items.filter((item) => used.has(item.id)))
 
   return menu.items
     .filter((item) => !current.has(item.id) && !dismissed.has(item.id) && !used.has(item.id))
-    .filter((item) => item.category !== 'drink' && item.category !== 'dessert')
-    .map((item, index) => ({ item, score: openingItemScore(item, usedCategories), index }))
+    .filter(isCoreFoodItem)
+    .map((item, index) => ({ item, score: openingItemScore(item, usedCategoryCounts), index }))
     .sort((left, right) => right.score - left.score || left.index - right.index)
     .map(({ item }) => item)
 }
 
-function openingItemScore(item: MenuItem, usedCategories: Set<string>) {
+function openingItemScore(item: MenuItem, usedCategoryCounts: Map<string, number>) {
   const categoryScore: Record<string, number> = {
+    pizza: 66,
+    salad: 45,
+    appetizer: 43,
     main: 50,
     vegetable: 44,
     staple: 40,
-    appetizer: 36,
     cold_appetizer: 32,
   }
+  const alreadyUsed = usedCategoryCounts.get(item.category) ?? 0
+  const repeatPenalty = item.category === 'pizza' ? 20 : 16
 
   return (
     (categoryScore[item.category] ?? 20) +
-    (usedCategories.has(item.category) ? -16 : 0) +
+    alreadyUsed * -repeatPenalty +
     (item.shareable ? 8 : 0) +
     (item.portion === 'large' ? 5 : item.portion === 'medium' ? 3 : 0)
   )
@@ -320,19 +324,23 @@ function getRecommendableItems(menu: RestaurantMenu, request: RecommendRequest) 
 }
 
 function currentOrderHasEnoughFood(menu: RestaurantMenu, request: RecommendRequest) {
-  const selectedFoodCount = menu.items.filter(
-    (item) =>
-      request.selectedItemIds.includes(item.id) &&
-      item.category !== 'drink' &&
-      item.category !== 'dessert',
-  ).length
+  const selectedFoodItems = menu.items.filter(
+    (item) => request.selectedItemIds.includes(item.id) && isCoreFoodItem(item),
+  )
+  const selectedFoodCount = selectedFoodItems.length
 
-  return selectedFoodCount >= targetDishCount(request)
+  if (isPizzaMenu(menu)) {
+    const pizzaCount = selectedFoodItems.filter((item) => item.category === 'pizza').length
+    return selectedFoodCount >= targetDishCount(request, menu) && pizzaCount >= targetPizzaCount(request)
+  }
+
+  return selectedFoodCount >= targetDishCount(request, menu)
 }
 
-function targetDishCount(request: RecommendRequest) {
-  const normal =
-    request.peopleCount <= 2
+function targetDishCount(request: RecommendRequest, menu: RestaurantMenu) {
+  const normal = isPizzaMenu(menu)
+    ? pizzaLunchTargetDishCount(request.peopleCount)
+    : request.peopleCount <= 2
       ? 3
       : request.peopleCount === 3
         ? 4
@@ -345,6 +353,21 @@ function targetDishCount(request: RecommendRequest) {
   return normal
 }
 
+function pizzaLunchTargetDishCount(peopleCount: number) {
+  if (peopleCount <= 1) return 2
+  if (peopleCount <= 2) return 2
+  if (peopleCount === 3) return 3
+  if (peopleCount <= 4) return 4
+  return Math.min(7, Math.ceil(peopleCount / 2) + 2)
+}
+
+function targetPizzaCount(request: RecommendRequest) {
+  if (request.peopleCount <= 1) return 1
+  if (request.peopleCount <= 2) return request.appetite === 'hungry' ? 2 : 1
+  if (request.peopleCount <= 4) return request.appetite === 'light' ? 1 : 2
+  return request.appetite === 'light' ? 2 : 3
+}
+
 function openingRecommendationCount(request: RecommendRequest) {
   return request.peopleCount === 1 ? 2 : 3
 }
@@ -353,8 +376,8 @@ function openingGuideText(locale: RecommendRequest['locale']): Omit<GuideRespons
   if (locale === 'en') {
     return {
       status: 'pairing',
-      title: 'Opening Table Set',
-      description: 'A balanced first round to anchor dinner for the table.',
+      title: 'Opening Lunch Set',
+      description: 'A pizza-first first round with enough freshness for the table.',
     }
   }
 
@@ -362,14 +385,14 @@ function openingGuideText(locale: RecommendRequest['locale']): Omit<GuideRespons
     return {
       status: 'pairing',
       title: '先來這幾道',
-      description: '先搭一輪餐點，讓份量和口味都剛剛好。',
+      description: '先用披薩打底，再搭一點清爽餐點，午餐份量剛剛好。',
     }
   }
 
   return {
     status: 'pairing',
     title: '先上桌的搭配',
-    description: '先用几道菜打底，让口味与分量都更均衡。',
+    description: '先用披萨打底，再搭一点清爽菜，午餐分量更刚好。',
   }
 }
 
@@ -441,4 +464,20 @@ function toPromptItem(item: MenuItem) {
     tags: item.tags,
     textureTags: item.textureTags,
   }
+}
+
+function isCoreFoodItem(item: MenuItem) {
+  return !['add_on', 'dessert', 'drink', 'side_sauce'].includes(item.category)
+}
+
+function isPizzaMenu(menu: RestaurantMenu) {
+  return menu.items.some((item) => item.category === 'pizza')
+}
+
+function categoryCounts(items: MenuItem[]) {
+  const counts = new Map<string, number>()
+  for (const item of items) {
+    counts.set(item.category, (counts.get(item.category) ?? 0) + 1)
+  }
+  return counts
 }

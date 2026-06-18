@@ -18,6 +18,8 @@ import type { ApiErrorCode, ApiErrorResponse } from '../lib/api-errors'
 
 type Screen = 'start' | 'menu'
 
+const LOCALE_STORAGE_KEY = 'menu-buddy-locale-v2'
+
 type OrderState = {
   selectedItemIds: string[]
   dismissedItemIds: string[]
@@ -67,7 +69,7 @@ export function OverthinkingDinner() {
     let active = true
     queueMicrotask(() => {
       if (!active) return
-      setLocaleState(normalizeLocale(window.localStorage.getItem('overthinking-dinner-locale')))
+      setLocaleState(normalizeLocale(window.localStorage.getItem(LOCALE_STORAGE_KEY)))
       setLocaleReady(true)
     })
 
@@ -79,7 +81,7 @@ export function OverthinkingDinner() {
   useEffect(() => {
     if (!localeReady) return
     document.documentElement.lang = locale
-    window.localStorage.setItem('overthinking-dinner-locale', locale)
+    window.localStorage.setItem(LOCALE_STORAGE_KEY, locale)
   }, [locale, localeReady])
 
   function setLocale(value: Locale) {

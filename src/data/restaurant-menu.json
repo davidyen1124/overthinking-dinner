@@ -1,374 +1,696 @@
 {
   "restaurant": {
-    "id": "yaichi-milpitas",
-    "name": "Yaichi",
+    "id": "flour-water-pizzeria-north-beach",
+    "name": "Flour + Water Pizzeria",
     "names": {
-      "zh-Hans": "Yaichi",
-      "zh-Hant": "Yaichi",
-      "en": "Yaichi"
+      "zh-Hans": "Flour + Water Pizzeria",
+      "zh-Hant": "Flour + Water Pizzeria",
+      "en": "Flour + Water Pizzeria"
     },
-    "description": "A mobile AI ordering assistant based on Yaichi's udon and seafood bowl menu.",
+    "description": "A lunch ordering assistant for Flour + Water Pizzeria in San Francisco, using the June 11, 2026 food menu.",
     "descriptions": {
-      "zh-Hans": "基于 Yaichi 乌冬和海鲜丼菜单的手机 AI 点菜助手。",
-      "zh-Hant": "以 Yaichi 烏龍麵與海鮮丼菜單打造的手機 AI 點餐助手。",
-      "en": "A mobile AI ordering assistant based on Yaichi's udon and seafood bowl menu."
+      "zh-Hans": "基于 Flour + Water Pizzeria 2026 年 6 月 11 日菜单的旧金山午餐点餐助手。",
+      "zh-Hant": "以 Flour + Water Pizzeria 2026 年 6 月 11 日菜單打造的舊金山午餐點餐助手。",
+      "en": "A lunch ordering assistant for Flour + Water Pizzeria in San Francisco, using the June 11, 2026 food menu."
     }
   },
   "items": [
     {
-      "id": "yaichi-matsu-bowl",
-      "name": "Matsu Bowl",
+      "id": "fwp-margherita",
+      "name": "Margherita",
       "names": {
-        "en": "Matsu Bowl",
-        "zh-Hans": "松级海鲜丼",
-        "zh-Hant": "松級海鮮丼"
+        "en": "Margherita"
       },
-      "originalName": "Matsu Bowl (Superior): Take Bowl ingredients plus Hokkaido sea urchin.",
-      "category": "main",
-      "price": "$41.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/matsu.avif",
+      "originalName": "Margherita: fresh mozzarella, basil, olive oil, parmigiano on a red pie base with aged mozzarella and sauce.",
+      "category": "pizza",
+      "price": "$19.00",
       "portion": "large",
-      "shareable": false,
+      "shareable": true,
       "spicyLevel": 0,
       "tags": [
-        "seafood",
+        "pizza",
+        "vegetarian",
         "fresh",
-        "rich",
-        "centerpiece"
+        "savory"
       ],
       "textureTags": [
-        "silky",
-        "briny"
-      ]
-    },
-    {
-      "id": "yaichi-take-bowl",
-      "name": "Take Bowl",
-      "names": {
-        "en": "Take Bowl",
-        "zh-Hans": "竹级海鲜丼",
-        "zh-Hant": "竹級海鮮丼"
-      },
-      "originalName": "Take Bowl (Premium): Ume Bowl ingredients plus marinated Hokkaido salmon roe.",
-      "category": "main",
-      "price": "$32.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/take.avif",
-      "portion": "large",
-      "shareable": false,
-      "spicyLevel": 0,
-      "tags": [
-        "seafood",
-        "fresh",
-        "rich"
-      ],
-      "textureTags": [
-        "silky",
-        "briny"
-      ]
-    },
-    {
-      "id": "yaichi-ume-bowl",
-      "name": "Ume Bowl",
-      "names": {
-        "en": "Ume Bowl",
-        "zh-Hans": "梅级海鲜丼",
-        "zh-Hant": "梅級海鮮丼"
-      },
-      "originalName": "Ume Bowl (Special): Minced tuna, Hokkaido scallop, tobiko, snow crab, shiso, and nori.",
-      "category": "main",
-      "price": "$26.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/ume.avif",
-      "portion": "large",
-      "shareable": false,
-      "spicyLevel": 0,
-      "tags": [
-        "seafood",
-        "fresh",
-        "starchy"
-      ],
-      "textureTags": [
-        "silky",
-        "briny"
-      ]
-    },
-    {
-      "id": "yaichi-take-trio-bukkake-udon",
-      "name": "Take-Trio Bukkake Udon",
-      "names": {
-        "en": "Take-Trio Bukkake Udon",
-        "zh-Hans": "竹级三鲜冷拌乌冬面",
-        "zh-Hant": "竹級三鮮冷拌烏龍麵"
-      },
-      "originalName": "Take-Trio Bukkake Udon: Snow crab, Hokkaido scallop, and salmon roe over udon and cold dashi with shiso and tempura bits.",
-      "category": "staple",
-      "price": "$32.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/take-bukkake.avif",
-      "portion": "large",
-      "shareable": false,
-      "spicyLevel": 0,
-      "tags": [
-        "noodle",
-        "seafood",
-        "fresh",
-        "rich"
-      ],
-      "textureTags": [
-        "chewy",
-        "cool"
-      ]
-    },
-    {
-      "id": "yaichi-shabu-shabu-beef-udon",
-      "name": "Shabu-Shabu Beef Udon",
-      "names": {
-        "en": "Shabu-Shabu Beef Udon",
-        "zh-Hans": "涮涮牛肉乌冬面",
-        "zh-Hant": "涮涮牛肉烏龍麵"
-      },
-      "originalName": "Shabu-Shabu Beef Udon: American Wagyu beef, soft-boiled egg, wakame, fried burdock, and yuzu.",
-      "category": "staple",
-      "price": "$25.00 / $31.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/shabushabu-udon.avif",
-      "portion": "large",
-      "shareable": false,
-      "spicyLevel": 0,
-      "tags": [
-        "noodle",
-        "beef",
-        "comforting"
-      ],
-      "textureTags": [
-        "chewy",
-        "brothy"
-      ]
-    },
-    {
-      "id": "yaichi-beef-curry-udon",
-      "name": "Beef Curry Udon",
-      "names": {
-        "en": "Beef Curry Udon",
-        "zh-Hans": "牛肉咖喱乌冬面",
-        "zh-Hant": "牛肉咖哩烏龍麵"
-      },
-      "originalName": "Beef Curry Udon: American Wagyu beef, potato, bok choy, and curry dashi soup.",
-      "category": "staple",
-      "price": "$25.00 / $31.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/curry-udon.avif",
-      "portion": "large",
-      "shareable": false,
-      "spicyLevel": 1,
-      "tags": [
-        "noodle",
-        "beef",
-        "rich",
-        "comforting"
-      ],
-      "textureTags": [
-        "chewy",
-        "brothy"
-      ]
-    },
-    {
-      "id": "yaichi-plum-udon",
-      "name": "Plum Udon",
-      "names": {
-        "en": "Plum Udon",
-        "zh-Hans": "梅子乌冬面",
-        "zh-Hant": "梅子烏龍麵"
-      },
-      "originalName": "Plum Udon: Plum, bonito flakes, tororo kombu, wakame, and bok choy.",
-      "category": "staple",
-      "price": "$22.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/plum-udon.avif",
-      "portion": "medium",
-      "shareable": false,
-      "spicyLevel": 0,
-      "tags": [
-        "noodle",
-        "light",
-        "fresh",
-        "vegetable"
-      ],
-      "textureTags": [
-        "chewy",
+        "melty",
         "bright"
       ]
     },
     {
-      "id": "yaichi-creamy-mentaiko-udon",
-      "name": "Creamy Mentaiko Udon",
+      "id": "fwp-burrata",
+      "name": "Burrata",
       "names": {
-        "en": "Creamy Mentaiko Udon",
-        "zh-Hans": "明太子奶油乌冬面",
-        "zh-Hant": "明太子奶油烏龍麵"
+        "en": "Burrata"
       },
-      "originalName": "Creamy Mentaiko Udon: Spicy cod roe, shiso leaf, nori seaweed, and soft-boiled egg.",
-      "category": "staple",
-      "price": "$24.50",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/mentai-udon.avif",
-      "portion": "medium",
-      "shareable": false,
+      "originalName": "Burrata: garlic, Sicilian dried tomatoes, oregano, chili, and lemon oil on a red pie base with aged mozzarella and sauce.",
+      "category": "pizza",
+      "price": "$23.00",
+      "portion": "large",
+      "shareable": true,
       "spicyLevel": 1,
       "tags": [
-        "noodle",
-        "seafood",
+        "pizza",
+        "vegetarian",
         "rich",
-        "savory"
+        "tangy"
       ],
       "textureTags": [
-        "chewy",
-        "creamy"
-      ]
-    },
-    {
-      "id": "yaichi-tempura-udon",
-      "name": "Tempura Udon",
-      "names": {
-        "en": "Tempura Udon",
-        "zh-Hans": "天妇罗乌冬面",
-        "zh-Hant": "天婦羅烏龍麵"
-      },
-      "originalName": "Tempura Udon: Shrimp, sweet potato, pumpkin, and shishito tempura with green onion, seaweed, and yuzu.",
-      "category": "staple",
-      "price": "$23.50",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/tempra-udon-hot.avif",
-      "portion": "large",
-      "shareable": false,
-      "spicyLevel": 0,
-      "tags": [
-        "noodle",
-        "fried",
-        "seafood",
-        "comforting"
-      ],
-      "textureTags": [
-        "crisp",
-        "brothy"
-      ]
-    },
-    {
-      "id": "yaichi-nagoya-style-wings",
-      "name": "Nagoya-Style Wings",
-      "names": {
-        "en": "Nagoya-Style Wings",
-        "zh-Hans": "名古屋风鸡翅",
-        "zh-Hant": "名古屋風雞翅"
-      },
-      "originalName": "Nagoya-Style Wings 3pc.",
-      "category": "appetizer",
-      "price": "$11.00 / +$4.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/chicken-wings.avif",
-      "portion": "small",
-      "shareable": true,
-      "spicyLevel": 0,
-      "tags": [
-        "chicken",
-        "savory",
-        "snack"
-      ],
-      "textureTags": [
-        "crisp",
-        "juicy"
-      ]
-    },
-    {
-      "id": "yaichi-fried-takoyaki",
-      "name": "Fried Takoyaki",
-      "names": {
-        "en": "Fried Takoyaki",
-        "zh-Hans": "炸章鱼烧",
-        "zh-Hant": "炸章魚燒"
-      },
-      "originalName": "Fried Takoyaki 3pc.",
-      "category": "appetizer",
-      "price": "$6.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/takoyaki.avif",
-      "portion": "small",
-      "shareable": true,
-      "spicyLevel": 0,
-      "tags": [
-        "seafood",
-        "fried",
-        "snack"
-      ],
-      "textureTags": [
-        "crisp",
-        "savory"
-      ]
-    },
-    {
-      "id": "yaichi-kushi-age-squid-leg",
-      "name": "Kushi-Age Squid Leg Skewer",
-      "names": {
-        "en": "Kushi-Age Squid Leg Skewer",
-        "zh-Hans": "炸鱿鱼脚串",
-        "zh-Hant": "炸魷魚腳串"
-      },
-      "originalName": "Kushi-Age (Deep Fried Squid Leg Skewer) 1pc.",
-      "category": "appetizer",
-      "price": "$4.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/deep-fried-octopus.avif",
-      "portion": "small",
-      "shareable": true,
-      "spicyLevel": 0,
-      "tags": [
-        "seafood",
-        "fried",
-        "snack"
-      ],
-      "textureTags": [
-        "crisp",
+        "creamy",
         "chewy"
       ]
     },
     {
-      "id": "yaichi-shishito-yuzu-miso",
-      "name": "Shishito with Yuzu Miso",
+      "id": "fwp-pepperoni",
+      "name": "Pepperoni",
       "names": {
-        "en": "Shishito with Yuzu Miso",
-        "zh-Hans": "柚子味噌狮子唐青椒",
-        "zh-Hant": "柚子味噌獅子唐青椒"
+        "en": "Pepperoni"
       },
-      "originalName": "Shishito with Yuzu Miso.",
-      "category": "vegetable",
-      "price": "$6.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/shishito.avif",
-      "portion": "small",
+      "originalName": "Pepperoni: grated mozzarella and mama lil's peppers on a red pie base with aged mozzarella and sauce.",
+      "category": "pizza",
+      "price": "$24.00",
+      "portion": "large",
       "shareable": true,
       "spicyLevel": 1,
       "tags": [
+        "pizza",
+        "pork",
+        "savory",
+        "spicy"
+      ],
+      "textureTags": [
+        "melty",
+        "crisp"
+      ]
+    },
+    {
+      "id": "fwp-smoky-eggplant",
+      "name": "Smoky Eggplant",
+      "names": {
+        "en": "Smoky Eggplant"
+      },
+      "originalName": "Smoky Eggplant: eggplant, smoked mozzarella, oregano, taggiasca olive, calabrian chili, and parmigiano on a red pie base with aged mozzarella and sauce.",
+      "category": "pizza",
+      "price": "$23.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "pizza",
+        "vegetarian",
+        "smoky",
+        "spicy"
+      ],
+      "textureTags": [
+        "melty",
+        "savory"
+      ]
+    },
+    {
+      "id": "fwp-vegan",
+      "name": "Vegan",
+      "names": {
+        "en": "Vegan"
+      },
+      "originalName": "Vegan: mushroom, eggplant, taggiasca olive, mama lil's peppers, garlic, oregano, red onion, and tofu burrata on a red pie base.",
+      "category": "pizza",
+      "price": "$22.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "pizza",
+        "vegan",
         "vegetable",
-        "fresh",
         "savory"
       ],
       "textureTags": [
-        "crisp",
+        "hearty",
         "bright"
       ]
     },
     {
-      "id": "yaichi-edamame",
-      "name": "Edamame",
+      "id": "fwp-hawaiian",
+      "name": "Hawaiian",
       "names": {
-        "en": "Edamame",
-        "zh-Hans": "毛豆",
-        "zh-Hant": "毛豆"
+        "en": "Hawaiian"
       },
-      "originalName": "Edamame.",
+      "originalName": "Hawaiian: capicola, pineapple, fresh mozzarella, pickled fresnos, and chili crisp on a red pie base with aged mozzarella and sauce.",
+      "category": "pizza",
+      "price": "$24.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "pizza",
+        "pork",
+        "sweet",
+        "spicy"
+      ],
+      "textureTags": [
+        "juicy",
+        "crisp"
+      ]
+    },
+    {
+      "id": "fwp-meatza",
+      "name": "Meatza",
+      "names": {
+        "en": "Meatza"
+      },
+      "originalName": "Meatza: pepperoni, sausage, guanciale, red onion, garlic, and pecorino toscano on a red pie base with aged mozzarella and sauce.",
+      "category": "pizza",
+      "price": "$25.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "pizza",
+        "pork",
+        "rich",
+        "savory"
+      ],
+      "textureTags": [
+        "hearty",
+        "melty"
+      ]
+    },
+    {
+      "id": "fwp-pride",
+      "name": "P.R.I.D.E.",
+      "names": {
+        "en": "P.R.I.D.E."
+      },
+      "originalName": "P.R.I.D.E.: prosciutto cotto, ricotta, diazabal, dijon bechamel, and egg on a white pie base with aged mozzarella.",
+      "category": "pizza",
+      "price": "$25.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "pizza",
+        "pork",
+        "rich",
+        "creamy"
+      ],
+      "textureTags": [
+        "creamy",
+        "melty"
+      ]
+    },
+    {
+      "id": "fwp-cacio-e-pepe",
+      "name": "Cacio e Pepe",
+      "names": {
+        "en": "Cacio e Pepe"
+      },
+      "originalName": "Cacio e Pepe: fresh mozzarella, pecorino crema, fontina, garlic, and black pepper on a white pie base with aged mozzarella.",
+      "category": "pizza",
+      "price": "$23.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "pizza",
+        "vegetarian",
+        "rich",
+        "savory"
+      ],
+      "textureTags": [
+        "creamy",
+        "peppery"
+      ]
+    },
+    {
+      "id": "fwp-pesto",
+      "name": "Pesto",
+      "names": {
+        "en": "Pesto"
+      },
+      "originalName": "Pesto: basil pesto, fresh mozzarella, ricotta, garlic, parmigiano, and lemon oil on a white pie base with aged mozzarella.",
+      "category": "pizza",
+      "price": "$22.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "pizza",
+        "vegetarian",
+        "fresh",
+        "herby"
+      ],
+      "textureTags": [
+        "creamy",
+        "bright"
+      ]
+    },
+    {
+      "id": "fwp-the-conrad",
+      "name": "The Conrad",
+      "names": {
+        "en": "The Conrad"
+      },
+      "originalName": "The Conrad: taleggio, fresh mozzarella, mushrooms, kale, red onion, and roasted garlic on a white pie base with aged mozzarella.",
+      "category": "pizza",
+      "price": "$24.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "pizza",
+        "mushroom",
+        "vegetable",
+        "rich"
+      ],
+      "textureTags": [
+        "earthy",
+        "melty"
+      ]
+    },
+    {
+      "id": "fwp-sausage",
+      "name": "Sausage",
+      "names": {
+        "en": "Sausage"
+      },
+      "originalName": "Sausage: fennel pork sausage, crescenza, broccolini, red onion, garlic, and calabrian chili on a white pie base with aged mozzarella.",
+      "category": "pizza",
+      "price": "$24.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "pizza",
+        "pork",
+        "vegetable",
+        "spicy"
+      ],
+      "textureTags": [
+        "hearty",
+        "melty"
+      ]
+    },
+    {
+      "id": "fwp-jersey-carbonara",
+      "name": "Jersey Carbonara",
+      "names": {
+        "en": "Jersey Carbonara"
+      },
+      "originalName": "Jersey Carbonara: pork roll, also called Taylor ham, pecorino, jalapeno, two eggs, and hot sauce on a white pie base with aged mozzarella.",
+      "category": "pizza",
+      "price": "$25.00",
+      "portion": "large",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "pizza",
+        "pork",
+        "rich",
+        "spicy"
+      ],
+      "textureTags": [
+        "hearty",
+        "peppery"
+      ]
+    },
+    {
+      "id": "fwp-caesar",
+      "name": "Caesar",
+      "names": {
+        "en": "Caesar"
+      },
+      "originalName": "Caesar: little gem, garlic croutons, parmigiano, and black pepper.",
+      "category": "salad",
+      "price": "$16.00",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "salad",
+        "fresh",
+        "savory",
+        "vegetable"
+      ],
+      "textureTags": [
+        "crisp",
+        "creamy"
+      ]
+    },
+    {
+      "id": "fwp-the-chop",
+      "name": "The Chop",
+      "names": {
+        "en": "The Chop"
+      },
+      "originalName": "The Chop: market veggies, chickpeas, pepperoncini, salumi toscano, provolone, and creamy Italian dressing.",
+      "category": "salad",
+      "price": "$16.00",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "salad",
+        "pork",
+        "fresh",
+        "tangy"
+      ],
+      "textureTags": [
+        "crunchy",
+        "creamy"
+      ]
+    },
+    {
+      "id": "fwp-castelvetrano-olives",
+      "name": "Castelvetrano Olives",
+      "names": {
+        "en": "Castelvetrano Olives"
+      },
+      "originalName": "Castelvetrano Olives.",
       "category": "appetizer",
-      "price": "$6.00",
-      "photoUrl": "https://yaichi.netlify.app/menu-items/edamame.avif",
+      "price": "$11.00",
+      "portion": "small",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "olive",
+        "snack",
+        "savory",
+        "light"
+      ],
+      "textureTags": [
+        "briny",
+        "tender"
+      ]
+    },
+    {
+      "id": "fwp-white-beans-celery",
+      "name": "White Beans + Celery",
+      "names": {
+        "en": "White Beans + Celery"
+      },
+      "originalName": "White Beans + Celery: black pepper, lemon oil, and parmigiano.",
+      "category": "appetizer",
+      "price": "$12.00",
       "portion": "small",
       "shareable": true,
       "spicyLevel": 0,
       "tags": [
         "vegetable",
+        "fresh",
         "light",
-        "snack"
+        "savory"
       ],
       "textureTags": [
+        "creamy",
+        "crisp"
+      ]
+    },
+    {
+      "id": "fwp-spring-peas-ricotta",
+      "name": "Spring Peas + Ricotta",
+      "names": {
+        "en": "Spring Peas + Ricotta"
+      },
+      "originalName": "Spring Peas + Ricotta: salsa verde, pistachio, and dill.",
+      "category": "appetizer",
+      "price": "$16.00",
+      "portion": "small",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "vegetable",
         "fresh",
-        "tender"
+        "herby",
+        "rich"
+      ],
+      "textureTags": [
+        "creamy",
+        "crunchy"
+      ]
+    },
+    {
+      "id": "fwp-halibut-crudo",
+      "name": "Halibut Crudo",
+      "names": {
+        "en": "Halibut Crudo"
+      },
+      "originalName": "Halibut Crudo: calamansi, cara cara, fennel, and fresno chili.",
+      "category": "appetizer",
+      "price": "$19.00",
+      "portion": "small",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "seafood",
+        "fresh",
+        "spicy",
+        "light"
+      ],
+      "textureTags": [
+        "silky",
+        "bright"
+      ]
+    },
+    {
+      "id": "fwp-prosciutto-di-parma",
+      "name": "Prosciutto di Parma",
+      "names": {
+        "en": "Prosciutto di Parma"
+      },
+      "originalName": "Prosciutto di Parma: strawberries, pecorino fresco, and aceto balsamico.",
+      "category": "appetizer",
+      "price": "$18.00",
+      "portion": "small",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "pork",
+        "sweet",
+        "savory",
+        "fresh"
+      ],
+      "textureTags": [
+        "silky",
+        "bright"
+      ]
+    },
+    {
+      "id": "fwp-calabrian-chicken-wings",
+      "name": "Calabrian Chicken Wings",
+      "names": {
+        "en": "Calabrian Chicken Wings"
+      },
+      "originalName": "Calabrian Chicken Wings: choice of ranch or blue cheese.",
+      "category": "appetizer",
+      "price": "$18.00",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 2,
+      "tags": [
+        "chicken",
+        "spicy",
+        "shareable",
+        "savory"
+      ],
+      "textureTags": [
+        "juicy",
+        "saucy"
+      ]
+    },
+    {
+      "id": "fwp-ricotta-meatballs",
+      "name": "Ricotta Meatballs",
+      "names": {
+        "en": "Ricotta Meatballs"
+      },
+      "originalName": "Ricotta Meatballs: beef, pork, marinara, parmigiano, and basil.",
+      "category": "appetizer",
+      "price": "$19.00",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "beef",
+        "pork",
+        "rich",
+        "savory"
+      ],
+      "textureTags": [
+        "tender",
+        "saucy"
+      ]
+    },
+    {
+      "id": "fwp-charred-brussels",
+      "name": "Charred Brussels",
+      "names": {
+        "en": "Charred Brussels"
+      },
+      "originalName": "Charred Brussels: cauliflower, calabrian chili, citrus, toasted sesame seeds, and basil.",
+      "category": "appetizer",
+      "price": "$14.00",
+      "portion": "medium",
+      "shareable": true,
+      "spicyLevel": 1,
+      "tags": [
+        "vegetable",
+        "spicy",
+        "fresh",
+        "savory"
+      ],
+      "textureTags": [
+        "charred",
+        "crisp"
+      ]
+    },
+    {
+      "id": "fwp-mozz-sticks",
+      "name": "Mozz Sticks + Marinara",
+      "names": {
+        "en": "Mozz Sticks + Marinara"
+      },
+      "originalName": "Mozz Sticks + Marinara. Add a side of ranch for $2.",
+      "category": "appetizer",
+      "price": "$12.00",
+      "portion": "small",
+      "shareable": true,
+      "spicyLevel": 0,
+      "tags": [
+        "fried",
+        "cheesy",
+        "snack",
+        "savory"
+      ],
+      "textureTags": [
+        "crisp",
+        "melty"
+      ]
+    },
+    {
+      "id": "fwp-soft-serve",
+      "name": "Soft Serve Ice Cream",
+      "names": {
+        "en": "Soft Serve Ice Cream"
+      },
+      "originalName": "Soft Serve Ice Cream: vanilla, chocolate, or swirl.",
+      "category": "dessert",
+      "price": "$8.00",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "dessert",
+        "sweet",
+        "creamy"
+      ],
+      "textureTags": [
+        "cold",
+        "creamy"
+      ]
+    },
+    {
+      "id": "fwp-add-chicken",
+      "name": "Add Chicken",
+      "names": {
+        "en": "Add Chicken"
+      },
+      "originalName": "Add chicken to a salad.",
+      "category": "add_on",
+      "price": "+$6.00",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "chicken",
+        "add_on",
+        "savory"
+      ],
+      "textureTags": [
+        "optional"
+      ]
+    },
+    {
+      "id": "fwp-soft-serve-topping",
+      "name": "Soft Serve Topping",
+      "names": {
+        "en": "Soft Serve Topping"
+      },
+      "originalName": "Soft Serve Topping: chocolate sauce, rainbow sprinkles, olive oil and sea salt, brown butter cereal crunch, or amarena cherries.",
+      "category": "add_on",
+      "price": "$1.50",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "dessert",
+        "sweet",
+        "add_on"
+      ],
+      "textureTags": [
+        "optional"
+      ]
+    },
+    {
+      "id": "fwp-gluten-free-crust",
+      "name": "Gluten-Free Sicilian-Style Crust",
+      "names": {
+        "en": "Gluten-Free Sicilian-Style Crust"
+      },
+      "originalName": "Make It Gluten Free: Sicilian-style 8 inch square crust.",
+      "category": "add_on",
+      "price": "+$2.00",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "pizza",
+        "add_on"
+      ],
+      "textureTags": [
+        "optional"
+      ]
+    },
+    {
+      "id": "fwp-pizza-add-ons",
+      "name": "Pizza Add-Ons",
+      "names": {
+        "en": "Pizza Add-Ons"
+      },
+      "originalName": "Pizza add-ons include pickled jalapenos, hot honey, calabrian chili, mushrooms, white anchovies, sausage, pepperoni, prosciutto, and burrata.",
+      "category": "add_on",
+      "price": "$2.00-$5.00",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 1,
+      "tags": [
+        "add_on",
+        "spicy",
+        "savory"
+      ],
+      "textureTags": [
+        "optional"
+      ]
+    },
+    {
+      "id": "fwp-side-sauce",
+      "name": "Side Sauce",
+      "names": {
+        "en": "Side Sauce"
+      },
+      "originalName": "Side Sauce: ranch or marinara.",
+      "category": "side_sauce",
+      "price": "$2.00",
+      "portion": "small",
+      "shareable": false,
+      "spicyLevel": 0,
+      "tags": [
+        "sauce",
+        "add_on",
+        "savory"
+      ],
+      "textureTags": [
+        "optional"
       ]
     }
   ]

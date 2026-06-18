@@ -1,14 +1,14 @@
-# Overthinking Dinner
+# Overthinking Lunch
 
-![Overthinking Dinner cover](.github/assets/overthinking-dinner.png)
+![Overthinking Lunch cover](.github/assets/overthinking-dinner.png)
 
 ## TL;DR
 
-We had a menu. We had hunger. Tragically, we also had AI.
+We had a pizza menu. We had lunch plans. Tragically, we also had AI.
 
-`overthinking-dinner` is a local ordering assistant for the ancient civic crisis of deciding what three people should eat. Pick the party size, appetite, and general level of chaos; it recommends real dishes from the menu and keeps going until everyone can stop pretending they had a strong opinion.
+`overthinking-dinner` is a local ordering assistant for the ancient civic crisis of deciding what three people should eat for lunch. Pick the party size, appetite, and general level of chaos; it recommends real dishes from the menu and keeps going until everyone can stop pretending they had a strong opinion.
 
-The current menu is Yaichi in Milpitas. Another restaurant can be swapped in through `src/data/restaurant-menu.json`, assuming you too enjoy turning dinner into structured data.
+The current menu is Flour + Water Pizzeria in San Francisco. Another restaurant can be swapped in through `src/data/restaurant-menu.json`, assuming you too enjoy turning lunch into structured data.
 
 ## Screenshots
 

@@ -4,8 +4,8 @@ import '@radix-ui/themes/styles.css'
 import '../index.css'
 
 export const metadata: Metadata = {
-  title: 'Overthinking Dinner',
-  description: 'A local AI ordering assistant for Yaichi in Milpitas.',
+  title: 'Overthinking Lunch',
+  description: 'A local AI ordering assistant for Flour + Water Pizzeria in San Francisco.',
 }
 
 export default function RootLayout({
